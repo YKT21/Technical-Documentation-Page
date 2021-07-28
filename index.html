@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation Page</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header class="nav-title">Python Documentation</header>
+        <ul>
+            <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#Characteristics_Of_Python" class="nav-link">Characteristics Of Python</a></li>
+            <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+            <li><a href="#Variable" class="nav-link">Variable</a></li>
+            <li><a href="#Data_Type" class="nav-link">Data Type</a></li>
+            <li><a href="#Decision_Making" class="nav-link">Decision Making</a></li>
+            <li><a href="#Loops" class="nav-link">Loops</a></li>
+            <li><a href="#Define_Function" class="nav-link">Define Function</a></li>
+            <li><a href="#Reference" class="nav-link">Reference</a></li>
+        </ul>
+    </nav>
+  
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+             <p> Python is a high level general-purpose programming language. It uses a multi-paradigm approach, 
+                 meaning it supports procedural, object-oriented, and some functional programming constructs.
+                 It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also
+                 available under the GNU General Public License (GPL). 
+             </p>
+             <p> Python is an easy to learn, powerful programming language. It has efficient high-level data 
+                 structures and a simple but effective approach to object-oriented programming. Python’s elegant
+                 syntax and dynamic typing, together with its interpreted nature, make it an ideal language for
+                 scripting and rapid application development in many areas on most platforms. <br>
+                 The Python interpreter and the extensive standard library are freely available in source or binary
+                 form for all major platforms from the Python Web site https://www.python.org/.
+             </p>
+        </section>
+
+        <section class="main-section" id="Characteristics_Of_Python">
+            <header>Characteristics Of Python</header>
+            <p>Following are important characteristics of Python Programming</p>
+            <ul>
+                <li>It supports functional and structured programming methods as well as OOP.</li>
+                <li>It can be used as a scripting language or can be compiled to byte-code for building large applications.</li>
+                <li>It provides very high-level dynamic data types and supports dynamic type checking.</li>
+                <li>It supports automatic garbage collection.</li>
+                <li>It can be easily integrated with C, C++, COM, ActiveX, CORBA, and Java.</li>
+            </ul>
+        </section>
+
+        <section class="main-section"  id="Hello_World">
+            <header>Hello World</header>
+            <p>Let's start writing your first "Hello world" Python code</p>
+        <div>
+        <pre><code>
+        # print statement <br>
+        print("Hello World !")
+        </code></pre>
+        </div>    
+        </section>
+
+        <section class="main-section"  id="Variable">
+            <header>Variable</header>
+            <p>Variables are nothing but reserved memory locations to store values. This means that when you create
+                 a variable you reserve some space in memory. <br>
+                 Based on the data type of a variable, the interpreter allocates memory and decides what can be 
+                 stored in the reserved memory. Therefore, by assigning different data types to variables, you can 
+                 store integers, decimals or characters in these variables.
+            </p>
+            <h3>Assign Value to Variable</h2>
+            <p>Python variables do not need explicit declaration to reserve memory space. The declaration happens 
+                automatically when you assign a value to a variable. The equal sign (=) is used to assign values to 
+                variables. <br>The operand to the left of the = operator is the name of the variable and the 
+                operand to the right of the = operator is the value stored in the variable.
+            </p>
+        <div>
+        <pre><code>
+        # assign an int value of 100 to variable x <br>
+        x = 100  <br> 
+        # assign a str value "John" to variable fName<br> 
+        fName = "John" <br> 
+        # str value can place in single/double quotes <br> 
+        lName = 'Smith' 
+        </code></pre>
+        </div>            
+        </section>
+
+        <section class="main-section"  id="Data_Type">
+            <header>Data Type</header>
+            <p>In programming, data type is an important concept. <br>
+                Variables can store data of different types, and different types can do different things. <br>                
+                Python has the following data types built-in by default, in these categories:
+            </p>
+            <table>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Example</th>
+                </tr>
+                <tr>
+                    <td>str</td>
+                    <td>x = "Hello World"</td>
+                </tr>
+                <tr>
+                    <td>int</td>
+                    <td>x = 10</td>
+                </tr>
+                <tr>
+                    <td>float</td>
+                    <td>x = 10.90</td>
+                </tr>
+                <tr>
+                    <td>complex</td>
+                    <td>x = 1j</td>
+                </tr>
+                <tr>
+                    <td>list</td>
+                    <td>x = ["apple", "banana", "cherry"]</td>
+                </tr>
+                <tr>
+                    <td>tuple</td>
+                    <td>x = ("apple", "banana", "cherry")</td>
+                </tr>
+                <tr>
+                    <td>range</td>
+                    <td>x = range(6)</td>
+                </tr>
+                <tr>
+                    <td>dict</td>
+                    <td>x = {"name" : "John", "age" : 36}</td>
+                </tr>
+                <tr>
+                    <td>set</td>
+                    <td>x = {"apple", "banana", "cherry"}</td>
+                </tr>
+                <tr>
+                    <td>frozenset</td>
+                    <td>x = frozenset({"apple", "banana", "cherry"})</td>
+                </tr>
+                <tr>
+                    <td>bool</td>
+                    <td>x = True <br>x = False</td>
+                </tr>
+                <tr>
+                    <td>bytes</td>
+                    <td>x = b"Hello"</td>
+                </tr>
+                <tr>
+                    <td>bytearray</td>
+                    <td>x = bytearray(5)</td>
+                </tr>
+                <tr>
+                    <td>memoryview</td>
+                    <td>x = memoryview(bytes(5))</td>
+                </tr>
+            </table>    
+        </section>
+
+        <section class="main-section"  id="Decision_Making">
+            <header>Decision Making</header>
+            
+            <p>Decision making is anticipation of conditions occurring while execution of the program and 
+                specifying actions taken according to the conditions. <br>
+                Decision structures evaluate multiple expressions which produce TRUE or FALSE as outcome. 
+                You need to determine which action to take and which statements to execute if outcome is TRUE 
+                or FALSE. <br>              
+                Following is the general form of a typical decision making structure found in most of the 
+                programming languages.  
+            </p>
+            <img src="image/condition.PNG" width="300" height="300" class="condition-img" alt="decision making structure image">
+            <span>Python programming language assumes any non-zero and non-null values as TRUE, and if it is 
+                either zero or null, then it is assumed as FALSE value.</span>
+            <h3>Python programming language provides following types of decision making statements.</h3>
+            <p>An if statement consists of a boolean expression followed by one or more statements.</p>  
+        <div>
+        <pre><code>
+        num1 = 4 <br> 
+        num2 = 6 <br> 
+        if num1 < num2: <br>
+            print("num1 is smaller than num2")
+        </code></pre>
+        </div>
+            <p>An if statement can be followed by an optional else statement, which executes when the boolean expression is FALSE.</p>
+        <div>
+        <pre><code>
+        num1 = 14 <br> 
+        num2 = 6 <br> 
+        if num1 < num2: <br>
+            print("num1 is smaller than num2") <br>
+        else: <br>
+            print("num1 is greater than num2")
+        </code></pre>
+        </div>
+            <p>There may be a situation when you want to check for another condition after a condition 
+                resolves to true. In such a situation, you can use the nested if construct.
+            </p>
+        <div>
+        <pre><code>
+        x, y = 10, 20 <br>
+        if x > y: <br>
+            print("x is greater than y") <br>
+        elif x == y: <br>
+            print("x is equal to y") <br>
+        else: <br>
+            print("x is smaller than y")
+        </code></pre>
+        </div>
+        </section>
+
+        <section class="main-section"  id="Loops">
+            <header>Loops</header>           
+            <h3>A loop statement allows us to execute a statement or group of statements multiple times.</h3>
+                    <p>While Loop. Repeats a statement or group of statements while a given condition is TRUE.
+                        It tests the condition before executing the loop body.</p>     
+        <div>
+        <pre><code>
+        i = 1 <br>
+        while i < 5: <br>
+            print(i) <br>
+            i += 1 <br>
+        </code></pre>
+        </div>
+                    <p>For Loop. Executes a sequence of statements multiple times and abbreviates the code 
+                        that manages the loop variable.</p>
+        <div>
+        <pre><code>
+        fruits = ["apple", "strawberry", "orange"] <br>
+            for x in fruits: <br>
+            print(x) <br>
+        </code></pre>
+        </div>
+        </section>
+
+        <section class="main-section" id="Define_Function">
+        <header>Define Function</header>
+        <p>You can define functions to provide the required functionality. Here are simple rules to 
+            define a function in Python.</p>
+            <ul>
+                <li>Function blocks begin with the keyword def followed by the function name and parentheses ( ).</li>
+                <li>Information can be passed into functions as arguments,and specified after the function name, 
+                    inside the parentheses. You can add as many arguments as you want, just separate them with a comma..</li>
+                <li>The code block within every function starts with a colon (:) and is indented.</li>
+                <li>The statement return [expression] exits a function, optionally passing back an expression 
+                    to the caller. A return statement with no arguments is the same as return None.</li>
+            </ul>
+            <p>Below is an example of how to define a function and call a function</p> 
+        <div>
+        <pre><code>
+        # define a function <br>
+        def fullName(fName, lName):  <br>
+            print(fName + " " + lName) <br>
+        # call the function <br>
+            fullName("YK", "Tamrakar")
+        </code></pre>                      
+        </div>
+        </section>
+
+        <section class="main-section"  id="Reference">
+            <header>Reference</header>
+            <p>All the documentation in this page is taken from Tutorialspoint and w3schools. <br> Want to learn more about Python Programming.
+                Click here <i style="font-size: 25px;">&#9758</i> <a href="https://www.tutorialspoint.com/python/index.htm">tutorialspoint </a> 
+                OR <a href="https://www.w3schools.com/python/default.asp ">w3schools</a>   
+            </p>
+        </section>      
+    </main> 
+    <footer>
+        <span>&#169 2021, YASU. All rights reserved . Build with &#9829 by Y.K.Tamrakar.</span>
+    </footer>  
+</body>
+</html> 
